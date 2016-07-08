@@ -18,7 +18,7 @@ plot(mydata$DateTime, mydata$Voltage, xlab = 'datetime', ylab = 'Voltage', type 
 plot(mydata$DateTime, mydata$Sub_metering_1, xlab = '', ylab = 'Energy sub metering', type = 'l')
 lines(mydata$DateTime, mydata$Sub_metering_2, col = 'red')
 lines(mydata$DateTime, mydata$Sub_metering_3, col = 'blue')
-legend('topright', col = c('black', 'red', 'blue'), legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), lwd = 1)
+legend('topright', col = c('black', 'red', 'blue'), legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), lwd = 1, box.lwd = 0 )
 plot(mydata$DateTime, mydata$Global_reactive_power, xlab = 'datetime', ylab = 'Global_reactive_power', type = 'l')
 # close device
 dev.off()
